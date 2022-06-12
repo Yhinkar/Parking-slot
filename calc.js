@@ -108,4 +108,5 @@ tabulate.addEventListener("click", () => {
     retrieveModel.innerHTML = userBooking.carModel;
     price.innerHTML = userBooking.price+'$';
     time.innerHTML = formattedTime;
-    total.innerHTML = totalBills+'$';)
+    total.innerHTML = totalBills+'$';
+})
