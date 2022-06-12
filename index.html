@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="calc.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card my-3">
+      <div class="card-header px-3 d-flex">
+        <h5 class="m-0">Parking management</h5>
+        <div class="ml-auto">
+          <span id="placesCount" class="badge badge-success"></span> available places
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <div class="input-group p-2" id="addForm">
+          <input type="text" class="form-control" id="carValue" placeholder="Registration number">
+          <div class="input-group-append">
+            <button id="carButton" class="btn btn-sm btn-success">Park car</button>
+          </div>
+          <p id="message" class="text-danger m-0">Registration number invalid</p>
+        </div>
+        <div class="table-responsive">
+          <table id="parking" class="table table-striped m-0">
+            <thead>
+              <tr>
+                <th>Registration no</th>
+                <th>Arrival</th>
+                <th>Departure</th>
+                <th>Status</th>
+                <th class="text-right">Bill</th>
+                <th class="text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Web3bridge parking slot task</h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div id="modalBody" class="modal-body"></div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+

@@ -1,0 +1,24 @@
+#addForm {
+    position: relative;
+  }
+  
+  #message {
+    display: none;
+    position: relative;
+    font-size: 10px;
+    position: absolute;
+  }
+  
+  #placesCount {
+    font-size: 90%;
+  }
+  
+  #parking th,
+  #parking td {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  #myModal .font-weight-bold {
+    font-weight: 500 !important;
+  }
