@@ -1,24 +1,65 @@
-#addForm {
-    position: relative;
+main{
+  display: grid;
+  width: 70%;
+  margin: 80px;
+  margin-left: 10%;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 20px;
+}
+@media(max-width: 960px){
+  main{
+      display: block;
+      width: 90%;
+      margin: 40px 20px 20px 20px;
   }
-  
-  #message {
-    display: none;
-    position: relative;
-    font-size: 10px;
-    position: absolute;
-  }
-  
-  #placesCount {
-    font-size: 90%;
-  }
-  
-  #parking th,
-  #parking td {
-    white-space: nowrap;
-    font-size: 14px;
-  }
-  
-  #myModal .font-weight-bold {
-    font-weight: 500 !important;
-  }
+}
+.seats{
+  border: 1px solid grey;
+  text-align: center;
+  padding: 20px;
+}
+.how-to{
+  background: green;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+.seats p{
+  color: black;
+}
+#seat3{
+  margin-left: 30px;
+}
+.input-field{
+  border: 1px solid whitesmoke;
+  padding: 10px;
+}
+select{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.input-field input{
+  width: 93%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid brown
+}
+.tabulate{
+  background: green;
+  border-radius: 10px;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+table, td{
+  table-layout: fixed;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  padding: 10px;
+  border: 1px solid black;
+}
