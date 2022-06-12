@@ -43,7 +43,7 @@ book.addEventListener("click", () => {
         slotPrice = 60;
     }
 
-    // push the booking information to the array of booked slots
+  
     booking.push({
         "slot": slotId.value,
         "name": fullname.value,
