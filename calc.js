@@ -110,3 +110,5 @@ tabulate.addEventListener("click", () => {
     time.innerHTML = formattedTime;
     total.innerHTML = totalBills+'$';
 })
+
+// Path of this code was copied online.
